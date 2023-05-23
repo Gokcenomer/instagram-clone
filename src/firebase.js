@@ -5,13 +5,14 @@ import { getAuth } from "firebase/auth";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCTOsMVPptYZNCg0rsJX5iilGC_j4FzuYI",
-  authDomain: "instagram-clone-12fa3.firebaseapp.com",
-  projectId: "instagram-clone-12fa3",
-  storageBucket: "instagram-clone-12fa3.appspot.com",
-  messagingSenderId: "973691176672",
-  appId: "1:973691176672:web:f10a063ef2f6c989d2f285",
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase
